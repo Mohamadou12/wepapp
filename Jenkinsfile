@@ -6,7 +6,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo '🔄 Clonage du repo...'
-                git branch: 'dev', url: 'https://github.com/ton-pseudo/wepapp.git'
+                git branch: 'dev', url: 'https://github.com/Mohamadou12/wepapp.git'
             }
         }
         
