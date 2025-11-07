@@ -32,10 +32,10 @@ pipeline {
     
     post {
         success {
-            slackSend(channel: '#tp-devops', color: 'good', message: "✅ Build ${BUILD_NUMBER} réussi ! Portfolio live → http://localhost:8082")
+            slackSend(channel: '#mohamadou', color: 'good', message: "✅ Build ${BUILD_NUMBER} réussi ! Portfolio live → http://localhost:8082")
         }
         failure {
-            slackSend(channel: '#tp-devops', color: 'danger', message: "❌ Build ${BUILD_NUMBER} échoué ! Logs → ${BUILD_URL}")
+            slackSend(channel: '#mohamadou', color: 'danger', message: "❌ Build ${BUILD_NUMBER} échoué ! Logs → ${BUILD_URL}")
         }
     }
 }
